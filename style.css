@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Off-Black);
+    padding: 0 20px;
+}
+
+main {
+    max-width: 375px;
+    background-color: var(--Dark-Grey);
+    padding: 30px;
+    text-align: center;
+    color: var(--White);
+    border-radius: 10px;
+}
+
+main img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+main h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+main h3 {
+    font-size: 14px;
+    color: var(--Green);
+}
+
+main p {
+    margin: 25px 0;
+}
+
+main ul {
+    padding: 0;
+}
+
+main ul li {
+    list-style: none;
+    padding: 10px 0;
+    background-color: var(--Grey);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main ul li:hover {
+    background-color: var(--Green);
+}
+main ul li:hover a{
+    color: var(--Dark-Grey);
+}
+
+main ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--White);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    color: rgb(164, 164, 168);
+}
+
+.attribution a {
+    color: var(--White);
+}
